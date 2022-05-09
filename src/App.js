@@ -8,11 +8,11 @@ export default function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             {/* this home page route should list all the beanies */}
             <BeaniesPage />
           </Route>
-          <Route path="/beanies/:id">
+          <Route exact path="/beanies/:id">
             {/* this route should point to a particulat beanie baby by id and render that specific BeanieDetail page */}{' '}
             <BeanieDetail />
           </Route>
