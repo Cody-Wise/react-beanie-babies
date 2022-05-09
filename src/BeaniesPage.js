@@ -15,12 +15,9 @@ function App() {
       const to = page * perPage;
       const beanies = await getBeanieBabies(from, to);
 
-      console.log(beanies);
-
       setLastPage(beanies.lastPage);
 
       setBeanieBabies(beanies.data);
-      console.log('useEffect', lastPage);
     }
 
     fetch();
